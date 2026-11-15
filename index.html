@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#176b60">
+<meta name="description" content="Englische Vokabeln aus Theme 2 spielerisch üben: Auswahlquiz, Lernkarten und Wiederholung.">
+<title>Wordwise · Dein Vokabeltraining</title>
+<style>
+:root{--paper:#f6f5ef;--white:#fff;--ink:#192f37;--muted:#52686b;--line:#dce3dc;--teal:#176b60;--dark:#114e47;--mint:#e4f0e8;--orange:#f2bd76;--red:#9b3134;--red-bg:#fff0ed;--radius:22px;--shadow:0 12px 34px #163c3010}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}button,input,select{font:inherit}button{cursor:pointer;touch-action:manipulation}button:disabled{cursor:default}button,input,select{border-radius:12px}button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible,a:focus-visible{outline:3px solid #ac650c;outline-offset:4px}button{min-height:48px}a{color:var(--teal)}[hidden]{display:none!important}.wrap{max-width:1100px;padding:0 30px;margin:auto}.top{border-bottom:1px solid var(--line)}.top-inner{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:88px}.brand{display:flex;align-items:center;gap:11px;background:none;border:0;color:var(--ink);padding:0;font-size:23px;font-weight:800;letter-spacing:-1px}.brand-mark{background:var(--teal);color:white;border-radius:12px;width:38px;height:38px;display:grid;place-items:center;font-size:21px;letter-spacing:-3px;padding-right:3px}.edition{font-size:13px;color:var(--muted);letter-spacing:.02em}.dot{display:inline-block;width:7px;height:7px;background:var(--teal);border-radius:50%;margin-right:7px}.hero{padding:47px 0 28px;display:flex;justify-content:space-between;align-items:center;gap:25px}.eyebrow{font-size:12px;letter-spacing:.15em;font-weight:800;text-transform:uppercase;color:var(--teal);margin:0 0 11px}h1{font-size:clamp(30px,4.6vw,49px);letter-spacing:-.055em;line-height:1.12;margin:0 0 15px;font-weight:800}h2{font-size:22px;letter-spacing:-.035em;margin:0 0 7px}h3{font-size:17px;margin:0}.lead{color:var(--muted);margin:0;max-width:590px}.hero-tag{background:var(--mint);color:var(--dark);padding:12px 18px;border-radius:14px;white-space:nowrap;font-weight:650;font-size:14px}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:5px 0 28px}.stat{background:var(--white);border:1px solid var(--line);border-radius:17px;padding:18px 22px}.stat-number{font-size:30px;font-weight:800;line-height:1.1;letter-spacing:-.05em}.stat-label{font-size:13px;color:var(--muted);margin-top:5px}.stat.good .stat-number{color:var(--teal)}.stat.work .stat-number{color:#9a5a08}.layout{display:grid;grid-template-columns:minmax(0,1.75fr) minmax(250px,1fr);gap:24px;align-items:start}.panel{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:28px}.panel-head{display:flex;justify-content:space-between;align-items:center;gap:15px;margin-bottom:25px}.step-no{color:var(--teal);font-weight:800;font-size:12px;border:1px solid #bed7c9;padding:5px 9px;border-radius:8px}.field{border:0;padding:0;margin:0 0 24px;min-width:0}.field legend{font-weight:750;margin-bottom:11px;font-size:14px}.mode-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.choice{border:1px solid var(--line);background:var(--white);text-align:left;padding:15px 16px;color:var(--ink);transition:background .15s,border-color .15s}.choice strong{display:block;font-size:15px}.choice small{display:block;font-size:12px;color:var(--muted);margin-top:3px}.choice[aria-pressed="true"]{background:var(--mint);border:2px solid var(--teal);padding:14px 15px}.chips{display:flex;flex-wrap:wrap;gap:8px}.chip{background:var(--white);color:var(--muted);border:1px solid var(--line);padding:8px 13px;font-size:13px;min-height:42px}.chip[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:white}.hint{font-size:12px;color:var(--muted);margin:9px 0 0}.primary{border:0;background:var(--teal);color:white;padding:13px 21px;font-weight:750}.primary:hover{background:var(--dark)}.wide{width:100%;display:flex;justify-content:space-between;align-items:center}.secondary{background:white;color:var(--teal);border:1px solid #b7cec1;padding:12px 19px;font-weight:700}.secondary:hover{background:var(--mint)}.text-btn{border:0;background:none;color:var(--muted);padding:8px 0;font-size:13px;text-decoration:underline;text-underline-offset:3px}.side{background:var(--teal);color:white;border:0;padding:26px}.side h2{font-size:22px;max-width:240px;margin-top:12px}.side .eyebrow{color:#c2e5d2}.side p{font-size:14px;color:#def0e4}.mini-steps{padding:0;list-style:none;margin:23px 0 0;display:grid;gap:17px}.mini-steps li{display:flex;gap:12px;font-size:13px;color:#edf7f1}.mini-steps span{display:grid;place-items:center;width:25px;height:25px;border:1px solid #75a698;border-radius:50%;flex-shrink:0;font-weight:700}.review-box{margin-top:18px;padding:22px;background:#f1e7d6;border-color:#e2d1b6;box-shadow:none}.review-box p{font-size:13px;color:#665942;margin:8px 0 15px}.review-box button{width:100%;background:#fffaf2;border-color:#cab697;color:#614825}.catalog{margin:28px 0 0;border:1px solid var(--line);border-radius:18px;background:white;overflow:hidden}.catalog summary{padding:19px 24px;cursor:pointer;font-weight:700}.catalog-content{padding:0 24px 22px}.search{width:100%;border:1px solid var(--line);padding:12px 14px;color:var(--ink);background:var(--paper);margin:0 0 15px;min-height:48px}.word-list{max-height:390px;overflow:auto;overscroll-behavior:contain}.word-row{display:grid;grid-template-columns:1fr 1fr auto;gap:15px;padding:12px 0;border-bottom:1px solid #edf0eb;font-size:14px;align-items:center}.word-row:last-child{border-bottom:0}.word-en{font-weight:700}.word-de{color:var(--muted)}.badge{font-size:10px;background:var(--paper);padding:4px 7px;border-radius:6px;color:var(--muted);white-space:nowrap}.catalog-note{color:var(--muted);font-size:12px;margin:0 0 16px}.footer{display:flex;gap:15px;align-items:center;justify-content:space-between;padding:25px 0 35px;color:var(--muted);font-size:12px}.footer p{margin:0;max-width:750px}.notice{background:#fff4d7;color:#704f0b;border:1px solid #e1cb94;border-radius:12px;padding:12px 16px;font-size:13px;margin:20px 0}.play-wrap{max-width:760px;margin:33px auto}.play-top{display:flex;justify-content:space-between;align-items:center;gap:14px;margin-bottom:19px}.back{border:0;background:none;color:var(--muted);padding:8px 0;font-weight:650;font-size:14px}.play-label{font-size:13px;color:var(--muted)}.progress{height:7px;background:#dce6dd;border-radius:8px;overflow:hidden;margin:0 0 12px}.progress-fill{height:100%;width:0;background:var(--teal);transition:width .25s}.progress-info{display:flex;justify-content:space-between;gap:12px;font-size:12px;color:var(--muted);margin-bottom:22px}.question-panel{padding:35px;text-align:center}.question-meta{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.12em;font-weight:700}.question-word{font-size:clamp(28px,5vw,48px);letter-spacing:-.04em;line-height:1.22;margin:22px 0 15px;overflow-wrap:anywhere}.question-word.long{font-size:clamp(24px,3.6vw,34px)}.question-prompt{font-size:14px;color:var(--muted);margin:0 0 27px}.answers{display:grid;grid-template-columns:1fr 1fr;gap:12px;text-align:left}.answer{border:1px solid #cad8cf;background:white;min-height:73px;padding:15px 17px;color:var(--ink);line-height:1.4;display:flex;align-items:center;gap:12px;text-align:left;overflow-wrap:anywhere}.answer:not(:disabled):hover{background:var(--mint);border-color:var(--teal)}.answer-key{width:25px;height:25px;display:grid;place-items:center;background:var(--paper);border-radius:7px;font-size:11px;flex-shrink:0;font-weight:700}.answer.correct{background:#e5f3e8;border:2px solid var(--teal);padding:14px 16px;color:var(--dark)}.answer.wrong{background:var(--red-bg);border:2px solid var(--red);padding:14px 16px;color:var(--red)}.answer:disabled{opacity:1}.feedback{margin-top:19px;text-align:left;border-radius:12px;padding:15px 18px;background:var(--mint);color:var(--dark);font-size:14px}.feedback.wrong{background:var(--red-bg);color:#7e3032}.feedback strong{display:block;margin-bottom:3px}.next{margin-top:18px;min-width:190px}.card-solution{background:var(--mint);border-radius:15px;color:var(--dark);padding:22px;margin:20px 0;font-size:24px;font-weight:750}.self-buttons{display:flex;gap:12px;justify-content:center;margin-top:18px}.self-buttons button{flex:1;max-width:245px}.result{text-align:center;padding:38px 30px}.result-circle{width:100px;height:100px;background:var(--mint);border:5px solid #bad7c5;border-radius:50%;display:grid;place-items:center;margin:0 auto 23px;color:var(--teal);font-size:28px;font-weight:800;letter-spacing:-.04em}.result h1{font-size:35px}.result .lead{margin:0 auto 25px}.result-actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}.missed{margin-top:24px;text-align:left;padding:23px}.empty{color:var(--muted);font-size:14px;padding:12px 0}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}@media(max-width:760px){.wrap{padding:0 20px}.layout{grid-template-columns:1fr}.side{display:none}.hero{padding:31px 0 23px}.hero-tag{display:none}.top-inner{min-height:73px}.edition{font-size:11px}.stats{gap:8px;margin-bottom:21px}.stat{padding:16px 13px}.stat-number{font-size:25px}.stat-label{font-size:11px}.panel{padding:23px}.question-panel{padding:27px 21px}.footer{align-items:flex-start;flex-direction:column;gap:3px}.play-wrap{margin-top:18px}.question-word{margin-top:24px}.word-row{gap:9px;font-size:13px}.catalog-content{padding:0 18px 18px}.catalog summary{padding:18px}.question-meta{font-size:10px}.result h1{font-size:30px}}@media(max-width:440px){.answers{grid-template-columns:1fr;gap:9px}.answer{min-height:59px;padding:12px 14px}.answer.correct,.answer.wrong{padding:11px 13px}.mode-grid{gap:8px}.choice{padding:13px 11px}.choice[aria-pressed="true"]{padding:12px 10px}.choice strong{font-size:13px}.choice small{font-size:11px}.wrap{padding:0 16px}.edition{max-width:90px;text-align:right}.self-buttons{flex-direction:column}.self-buttons button{max-width:none}.word-row{grid-template-columns:1fr 1fr}.word-row .badge{display:none}.play-label{font-size:11px}.question-panel{padding:25px 18px}.question-prompt{margin-bottom:20px}.result-actions{flex-direction:column}.result-actions button{width:100%}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap top-inner"><button class="brand" data-action="home" aria-label="Wordwise – zur Übersicht"><span class="brand-mark" aria-hidden="true">w.</span>wordwise<span style="color:var(--teal)">.</span></button><div class="edition"><span class="dot" aria-hidden="true"></span>Englisch · Theme 2</div></div></header>
+<main class="wrap" id="app"></main>
+<noscript><div class="wrap notice">Bitte aktiviere JavaScript, damit du die Vokabelspiele nutzen kannst.</div></noscript>
+<script id="vocabulary" type="application/json">
+[
+{"en":"fresh","de":"neu, frisch","s":"I","p":198},
+{"en":"start","de":"Anfang, Beginn","s":"I","p":198},
+{"en":"Good morning!","de":"Guten Morgen!","s":"I","p":198},
+{"en":"coconut","de":"Kokosnuss","s":"A1","p":198},
+{"en":"soap","de":"Seife","s":"A1","p":198},
+{"en":"wash","de":"waschen; sich waschen","s":"A1","p":198},
+{"en":"elbow","de":"Ellenbogen","s":"A1","p":198},
+{"en":"face","de":"Gesicht","s":"A1","p":198},
+{"en":"neck","de":"Hals; Nacken","s":"A1","p":198},
+{"en":"shoulder","de":"Schulter","s":"A1","p":198},
+{"en":"hair","de":"Haar","s":"A1","p":198},
+{"en":"brush one’s teeth","de":"sich die Zähne putzen","s":"A1","p":198},
+{"en":"brush","de":"putzen, bürsten","s":"A1","p":198},
+{"en":"tooth (plural: teeth)","de":"Zahn (Mehrzahl: Zähne)","s":"A1","p":198},
+{"en":"toothpaste","de":"Zahnpasta","s":"A1","p":198},
+{"en":"back","de":"Rücken","s":"A1","p":198},
+{"en":"tummy","de":"Bauch","s":"A1","p":198},
+{"en":"chest","de":"Brustkorb","s":"A1","p":198},
+{"en":"foot (plural: feet)","de":"Fuß (Mehrzahl: Füße)","s":"A1","p":198},
+{"en":"knee","de":"Knie","s":"A1","p":198},
+{"en":"leg","de":"Bein","s":"A1","p":198},
+{"en":"hurry (up)","de":"sich beeilen","s":"A2","p":198},
+{"en":"o’clock","de":"Uhr","s":"A2","p":198},
+{"en":"ear","de":"Ohr","s":"A2","p":198},
+{"en":"dirty","de":"dreckig, schmutzig","s":"A2","p":198},
+{"en":"Don’t forget …!","de":"Vergiss nicht …! / Vergesst nicht …!","s":"A2","p":198},
+{"en":"forget","de":"vergessen","s":"A2","p":198},
+{"en":"eye","de":"Auge","s":"A2","p":198},
+{"en":"nose","de":"Nase","s":"A2","p":198},
+{"en":"mouth","de":"Mund","s":"A2","p":198},
+{"en":"water","de":"Wasser","s":"A2","p":198},
+{"en":"wet","de":"nass","s":"A2","p":198},
+{"en":"cold","de":"kalt","s":"A2","p":199},
+{"en":"sea","de":"Meer, See","s":"A2","p":199},
+{"en":"bathroom","de":"Badezimmer","s":"A2","p":199},
+{"en":"quarter","de":"Viertel","s":"A2","p":199},
+{"en":"past","de":"nach","s":"A2 / A7","p":199},
+{"en":"late","de":"(zu) spät","s":"A2","p":199},
+{"en":"just","de":"nur, bloß","s":"A2","p":199},
+{"en":"still","de":"(immer) noch","s":"A2","p":199},
+{"en":"mirror","de":"Spiegel","s":"A3","p":199},
+{"en":"long","de":"lang","s":"A3","p":199},
+{"en":"scary","de":"unheimlich","s":"A3","p":199},
+{"en":"haven’t got","de":"habe(n) nicht","s":"A3","p":199},
+{"en":"good-looking","de":"gut aussehend","s":"A3","p":199},
+{"en":"guy","de":"Kerl, Typ","s":"A3","p":199},
+{"en":"tall","de":"groß","s":"A3","p":199},
+{"en":"strong","de":"stark","s":"A3","p":199},
+{"en":"slim","de":"schlank","s":"A3","p":199},
+{"en":"body","de":"Körper","s":"A3","p":199},
+{"en":"short","de":"kurz","s":"A3","p":199},
+{"en":"dark","de":"dunkel","s":"A3","p":199},
+{"en":"Mr","de":"Herr (Anrede)","s":"A3","p":199},
+{"en":"book","de":"Buch","s":"A3","p":199},
+{"en":"grandpa","de":"Opa","s":"A4","p":199},
+{"en":"story","de":"Geschichte","s":"A4","p":199},
+{"en":"bath","de":"Badewanne","s":"A4","p":199},
+{"en":"bedroom","de":"Schlafzimmer","s":"A4","p":199},
+{"en":"grey","de":"grau","s":"A6","p":200},
+{"en":"curly","de":"lockig","s":"A6","p":200},
+{"en":"sporty","de":"sportlich","s":"A6","p":200},
+{"en":"glasses","de":"Brille","s":"A6","p":200},
+{"en":"freckle","de":"Sommersprosse","s":"A6","p":200},
+{"en":"smile","de":"lächeln","s":"A6","p":200},
+{"en":"average","de":"durchschnittlich","s":"A6","p":200},
+{"en":"breakfast","de":"Frühstück","s":"A7","p":200},
+{"en":"table","de":"Tisch","s":"A7","p":200},
+{"en":"It’s half past eight.","de":"Es ist halb neun.","s":"A7","p":200},
+{"en":"half","de":"halb","s":"A7","p":200},
+{"en":"kitchen","de":"Küche","s":"A7","p":200},
+{"en":"you’ve got (= you have got)","de":"du hast; ihr habt","s":"A7","p":200},
+{"en":"only","de":"nur, bloß","s":"A7","p":200},
+{"en":"milk","de":"Milch","s":"A7","p":200},
+{"en":"I don’t like …","de":"Ich mag … nicht.","s":"A7","p":200},
+{"en":"every","de":"jede(r, s)","s":"A7","p":200},
+{"en":"I wish it was Sunday!","de":"Ich wünschte, es wäre Sonntag!","s":"A7","p":200},
+{"en":"wish","de":"wünschen","s":"A7","p":200},
+{"en":"cooked","de":"gekocht","s":"A7","p":200},
+{"en":"dad","de":"Papa, Vati","s":"A7","p":200},
+{"en":"Listen to the song and act it out.","de":"Höre dir das Lied an und spiele es nach.","s":"Sätze","p":198},
+{"en":"Look at the comic.","de":"Sieh dir den Comic an.","s":"Sätze","p":198},
+{"en":"Point at body parts and say the words.","de":"Zeige auf Körperteile und sage die Wörter.","s":"Sätze","p":198},
+{"en":"Where is …?","de":"Wo ist …?","s":"Sätze","p":198},
+{"en":"Why does David have to hurry up?","de":"Warum muss sich David beeilen?","s":"Sätze","p":198},
+{"en":"Talk about David’s morning.","de":"Sprich über Davids Morgen.","s":"Sätze","p":199},
+{"en":"Act out the scene.","de":"Spielt die Szene nach.","s":"Sätze","p":199},
+{"en":"Tell your partner what to do.","de":"Erzähle deinem Partner / deiner Partnerin, was er / sie tun soll.","s":"Sätze","p":199},
+{"en":"Look at the pictures.","de":"Sieh dir die Bilder an.","s":"Sätze","p":199},
+{"en":"What does David see in the mirror?","de":"Was sieht David im Spiegel?","s":"Sätze","p":199},
+{"en":"Which words describe …?","de":"Welche Wörter beschreiben …?","s":"Sätze","p":199},
+{"en":"Draw a picture of a fantasy character.","de":"Zeichne ein Bild von einer Fantasiegestalt.","s":"Sätze","p":199},
+{"en":"Label the body parts.","de":"Beschrifte die Körperteile.","s":"Sätze","p":199},
+{"en":"Write a speech bubble.","de":"Schreibe eine Sprechblase.","s":"Sätze","p":199},
+{"en":"Write a text about …","de":"Schreibe einen Text über …","s":"Sätze","p":199},
+{"en":"What does the cat do in the story?","de":"Was macht die Katze in der Geschichte?","s":"Sätze","p":200},
+{"en":"What happens to her?","de":"Was passiert ihr?","s":"Sätze","p":200},
+{"en":"Who is who?","de":"Wer ist wer?","s":"Sätze","p":200},
+{"en":"Look at page … for help.","de":"Sieh dir zur Hilfe Seite … an.","s":"Sätze","p":200},
+{"en":"Describe yourself like this.","de":"Beschreibe dich so.","s":"Sätze","p":200},
+{"en":"Write a poem about yourself.","de":"Schreibe ein Gedicht über dich.","s":"Sätze","p":200},
+{"en":"Write about a famous person.","de":"Schreibe über eine berühmte Person.","s":"Sätze","p":200},
+{"en":"Read your text but do not say the name of the person.","de":"Lies deinen Text, sage aber nicht den Namen der Person.","s":"Sätze","p":200},
+{"en":"Your classmates guess who it is.","de":"Deine Klassenkameraden / Klassenkameradinnen raten, wer es ist.","s":"Sätze","p":200},
+{"en":"Collect breakfast words.","de":"Sammle Frühstückswörter.","s":"Sätze","p":200},
+{"en":"What does David have for breakfast today?","de":"Was isst David heute zum Frühstück?","s":"Sätze","p":200}
+]
+</script>
+<script>
+'use strict';
+// Alle Inhalte, Stile und Funktionen sind in dieser Datei enthalten.
+const WORDS=JSON.parse(document.getElementById('vocabulary').textContent).map((w,i)=>({...w,id:'w'+i}));
+const MAIN=WORDS.filter(w=>w.s!=='Sätze');
+const KEY='wordwise-theme2-v1';
+const app=document.getElementById('app');
+const sectionLabels={all:'Alle Vokabeln',I:'Einstieg',A1:'A1 · Körperpflege',A2:'A2 · Mein Morgen',A3:'A3 · Beschreiben',A4:'A4 · Geschichte',A6:'A6 · Über mich',A7:'A7 · Frühstück',Sätze:'Sätze & Aufträge'};
+let mode='quiz',section='all',length=10,round=null,storageOK=true,records={};
+try{const saved=JSON.parse(localStorage.getItem(KEY)||'{}');if(saved&&typeof saved==='object'&&!Array.isArray(saved)){for(const w of WORDS){const r=saved[w.id];if(r&&Number.isInteger(r.seen)&&r.seen>=0&&Number.isInteger(r.streak)&&r.streak>=0&&typeof r.difficult==='boolean')records[w.id]=r;}}localStorage.setItem(KEY,JSON.stringify(records));}catch(e){storageOK=false;}
+function esc(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+function shuffle(a){const b=[...a];for(let i=b.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[b[i],b[j]]=[b[j],b[i]];}return b;}
+function pool(){return section==='all'?MAIN:WORDS.filter(w=>section==='Sätze'?w.s==='Sätze':w.s.split(' / ').includes(section));}
+function difficult(){return WORDS.filter(w=>records[w.id]?.difficult);}
+function stats(){return {known:MAIN.filter(w=>(records[w.id]?.streak||0)>=2).length,work:MAIN.filter(w=>(records[w.id]?.seen||0)>0&&(records[w.id]?.streak||0)<2).length,open:MAIN.filter(w=>!records[w.id]?.seen).length};}
+function save(){try{localStorage.setItem(KEY,JSON.stringify(records));}catch(e){storageOK=false;}}
+function record(w,right){const r=records[w.id]||{seen:0,streak:0,difficult:false};r.seen++;r.streak=right?r.streak+1:0;if(!right)r.difficult=true;else if(r.streak>=2)r.difficult=false;records[w.id]=r;save();}
+function notice(){return storageOK?'':'<div class="notice" role="status">Dein Browser erlaubt gerade kein Speichern. Du kannst spielen; dein Lernstand bleibt aber nur bis zum Schließen dieser Seite erhalten.</div>';}
+function nav(hash){if(location.hash===hash)render();else location.hash=hash;}
+function home(){round=null;nav('#start');}
+function renderHome(){const st=stats(),n=difficult().length;app.innerHTML=`${notice()}<section class="hero"><div><p class="eyebrow">Dein Vokabeltraining</p><h1>Kleine Runde.<br>Große Fortschritte.</h1><p class="lead">Erst Englisch. Dann du. Übe die Wörter aus Theme 2 – in deinem Tempo, eine Vokabel nach der anderen.</p></div><span class="hero-tag">Seiten 198–200 · ${MAIN.length} Vokabeln</span></section><section class="stats" aria-label="Dein Lernstand für die Vokabeln"><div class="stat good"><div class="stat-number">${st.known}</div><div class="stat-label">Schon sicher</div></div><div class="stat work"><div class="stat-number">${st.work}</div><div class="stat-label">Noch im Training</div></div><div class="stat"><div class="stat-number">${st.open}</div><div class="stat-label">Noch entdecken</div></div></section><div class="layout"><section class="panel"><div class="panel-head"><div><h2>Deine nächste Runde</h2><p class="hint" style="margin-top:0">Wähle aus und leg los.</p></div><span class="step-no">LET’S GO</span></div><fieldset class="field"><legend>1 · Wie möchtest du üben?</legend><div class="mode-grid"><button class="choice" data-mode="quiz" aria-pressed="${mode==='quiz'}"><strong>Bedeutung anklicken</strong><small>Vier Antworten. Eine passt.</small></button><button class="choice" data-mode="cards" aria-pressed="${mode==='cards'}"><strong>Lernkarten aufdecken</strong><small>Erst überlegen, dann umdrehen.</small></button></div></fieldset><fieldset class="field"><legend>2 · Welche Wörter sind dran?</legend><div class="chips">${Object.entries(sectionLabels).map(([k,v])=>`<button class="chip" data-section="${k}" aria-pressed="${section===k}">${v}</button>`).join('')}</div><p class="hint" id="pool-note">${pool().length} Einträge in dieser Auswahl. ${section==='Sätze'?'Freiwilliger Zusatz: die Arbeitsaufträge aus den Kästen.':'„Alle Vokabeln“ enthält die Wörter und Wendungen ohne Arbeitsaufträge.'}</p></fieldset><fieldset class="field"><legend>3 · Wie lang ist deine Runde?</legend><div class="chips">${[10,20,'all'].map(n=>`<button class="chip" data-length="${n}" aria-pressed="${length===n}">${n==='all'?'Alle':n+' Wörter'}</button>`).join('')}</div><p class="hint">Kleine Auswahl? Dann kommen alle gewählten Einträge dran.</p></fieldset><button class="primary wide" data-action="start"><span>Runde starten</span><span aria-hidden="true">→</span></button></section><aside><section class="panel side"><p class="eyebrow">So einfach geht’s</p><h2>Englisch sehen.<br>Bedeutung finden.</h2><p>Keine Bilder, die etwas verraten. Hier zählen deine Wörter.</p><ol class="mini-steps"><li><span>1</span>Sieh dir das englische Wort an.</li><li><span>2</span>Wähle die Bedeutung oder decke die Karte auf.</li><li><span>3</span>Übe schwierige Wörter noch einmal.</li></ol></section><section class="panel review-box"><h3>Noch einmal üben</h3><p>${n?n+' schwierige '+(n===1?'Vokabel wartet':'Vokabeln warten')+' auf dich. Nach zwei richtigen Antworten hintereinander wird ein Wort als sicher gezählt.':'Hier sammeln sich Wörter, die du noch üben möchtest. Nach zwei richtigen Antworten hintereinander gilt ein Wort als sicher.'}</p><button class="secondary" data-action="review" ${n?'':'disabled'}>${n?'Schwierige Wörter üben':'Noch keine schwierigen Wörter'}</button></section></aside></div><details class="catalog"><summary>Wortschatz nachschlagen · ${MAIN.length} Vokabeln + ${WORDS.length-MAIN.length} Arbeitsaufträge</summary><div class="catalog-content"><p class="catalog-note">Aus deinen drei Fotos übertragen. „past“ steht im Buch zweimal und wird hier einmal geführt. Bei „tooth“ und „foot“ ist die Mehrzahl enthalten. Arbeitsaufträge sind separat wählbar; abgeschnittene deutsche Texte wurden sinngemäß vervollständigt.</p><label class="sr-only" for="search">Englisches oder deutsches Wort suchen</label><input id="search" class="search" type="search" placeholder="Englisches oder deutsches Wort suchen …" autocomplete="off"><div class="word-list" id="word-list">${listWords(WORDS)}</div></div></details><footer class="footer"><p>Dein Lernstand bleibt in diesem Browser auf diesem Gerät. „Schon sicher“ bedeutet: zweimal hintereinander richtig. Bei Lernkarten zählt deine eigene Einschätzung.</p><button class="text-btn" data-action="reset">Lernstand löschen</button></footer>`;}
+function listWords(items){return items.length?items.map(w=>`<div class="word-row"><span class="word-en" lang="en">${esc(w.en)}</span><span class="word-de">${esc(w.de)}</span><span class="badge">${esc(w.s)} · S. ${w.p}</span></div>`).join(''):'<p class="empty">Kein passender Eintrag gefunden.</p>';}
+function choicesFor(w){const source=WORDS.filter(x=>(x.s==='Sätze')===(w.s==='Sätze'));const seen=new Set([w.de]);const others=[];for(const x of shuffle(source)){if(!seen.has(x.de)){seen.add(x.de);others.push(x);if(others.length===3)break;}}return shuffle([w,...others]);}
+function start(items=pool(),isReview=false){if(!items.length)return;const count=length==='all'?items.length:Math.min(length,items.length);round={mode,items:shuffle(items).slice(0,count),index:0,right:0,missed:[],locked:false,revealed:false,options:null,review:isReview};nav('#spielen');}
+function current(){return round.items[round.index];}
+function play(){if(!round)return home();const w=current();if(!round.options)round.options=choicesFor(w);const total=round.items.length;app.innerHTML=`${notice()}<section class="play-wrap"><div class="play-top"><button class="back" data-action="home">← Zur Übersicht</button><span class="play-label">${round.review?'Schwierige Wörter':round.mode==='quiz'?'Bedeutung anklicken':'Lernkarten'}</span></div><div class="progress" role="progressbar" aria-label="Fortschritt der Runde" aria-valuemin="0" aria-valuemax="${total}" aria-valuenow="${round.index}"><div class="progress-fill" style="width:${round.index/total*100}%"></div></div><div class="progress-info"><span>Wort ${round.index+1} von ${total}</span><span>${round.right} ${round.mode==='quiz'?'richtig':'gewusst'}</span></div><section class="panel question-panel" aria-labelledby="question"><div class="question-meta">${w.s==='Sätze'?'Sätze & Arbeitsaufträge':'Theme 2 · '+esc(w.s)} · Seite ${w.p}</div><h1 class="question-word ${w.en.length>27?'long':''}" id="question" lang="en" tabindex="-1">${esc(w.en)}</h1><p class="question-prompt">${round.mode==='quiz'?'Welche deutsche Bedeutung passt?':'Weißt du, was das auf Deutsch heißt? Überlege zuerst.'}</p>${round.mode==='quiz'?`<div class="answers">${round.options.map((x,i)=>`<button class="answer" data-answer="${i}"><span class="answer-key" aria-hidden="true">${i+1}</span><span>${esc(x.de)}</span></button>`).join('')}</div><div id="feedback" role="status" aria-live="polite"></div><button class="primary next" data-action="next" hidden>${round.index+1===total?'Runde abschließen':'Nächstes Wort →'}</button>`:`<button class="primary" id="reveal" data-action="reveal">Lösung aufdecken</button><div id="card-back" hidden><div class="card-solution">${esc(w.de)}</div><p class="hint">Sei ehrlich zu dir: Konntest du die Bedeutung vorher schon?</p><div class="self-buttons"><button class="secondary" data-self="false">Noch üben</button><button class="primary" data-self="true">Gewusst ✓</button></div></div>`}</section><p class="hint" style="text-align:center;margin-top:17px">${round.mode==='quiz'?'Erst in Ruhe überlegen. Du hast so viel Zeit, wie du brauchst.':'Du entscheidest selbst, welche Wörter du noch üben möchtest.'}</p></section>`;document.getElementById('question')?.focus({preventScroll:true});}
+function answer(index){if(!round||round.mode!=='quiz'||round.locked)return;const chosen=round.options[index];if(!chosen)return;round.locked=true;const w=current(),right=chosen.id===w.id;settle(right);const buttons=[...app.querySelectorAll('[data-answer]')];buttons.forEach((b,i)=>{b.disabled=true;if(round.options[i].id===w.id){b.classList.add('correct');b.querySelector('.answer-key').textContent='✓';}else if(i===index){b.classList.add('wrong');b.querySelector('.answer-key').textContent='×';}});const fb=document.getElementById('feedback');fb.className='feedback'+(right?'':' wrong');fb.innerHTML=`<strong>${right?'Richtig, gut gemacht!':'Noch nicht ganz – merk dir dieses Wort:'}</strong><span lang="en">${esc(w.en)}</span> = ${esc(w.de)}${!storageOK?'<div class="hint">Der Lernstand kann gerade nur für diese Sitzung behalten werden.</div>':''}`;const next=app.querySelector('[data-action="next"]');next.hidden=false;next.focus({preventScroll:true});}
+function settle(right){const w=current();if(right)round.right++;else round.missed.push(w);record(w,right);}
+function reveal(){if(!round||round.mode!=='cards'||round.revealed)return;round.revealed=true;document.getElementById('reveal').hidden=true;document.getElementById('card-back').hidden=false;app.querySelector('[data-self]')?.focus({preventScroll:true});}
+function selfAnswer(right){if(!round||round.mode!=='cards'||!round.revealed||round.locked)return;round.locked=true;settle(right);next();}
+function next(){if(!round||!round.locked)return;round.index++;if(round.index>=round.items.length){nav('#ergebnis');}else{round.locked=false;round.revealed=false;round.options=null;play();}window.scrollTo({top:0,behavior:'instant'});}
+function result(){if(!round||round.index<round.items.length)return home();const n=round.items.length,bad=round.missed.length;app.innerHTML=`${notice()}<section class="play-wrap"><section class="panel result"><p class="eyebrow">Runde geschafft</p><div class="result-circle" aria-label="${round.right} von ${n}">${round.right}/${n}</div><h1 tabindex="-1" id="result-title">${bad?'Jede Runde bringt dich weiter.':'Das hast du richtig gut gemacht!'}</h1><p class="lead">${round.mode==='quiz'?`Du hast ${round.right} von ${n} Bedeutungen richtig erkannt.`:`Du hast bei ${round.right} von ${n} Karten „Gewusst“ gewählt.`} ${bad?`Die übrigen ${bad} ${bad===1?'Vokabel kannst':'Vokabeln kannst'} du gleich noch einmal üben.`:'Alle Wörter dieser Runde waren richtig.'}</p><div class="result-actions">${bad?'<button class="primary" data-action="retry">Diese Fehler wiederholen</button>':'<button class="primary" data-action="again">Neue Runde starten</button>'}<button class="secondary" data-action="home">Zur Übersicht</button></div></section>${bad?`<section class="panel missed"><h2>Noch einmal anschauen</h2>${listWords(round.missed)}</section>`:''}<p class="hint" style="text-align:center;margin-top:17px">Zwei richtige Antworten hintereinander machen ein Wort sicher.</p></section>`;document.getElementById('result-title')?.focus({preventScroll:true});}
+function render(){if(location.hash==='#spielen'&&round&&round.index<round.items.length)play();else if(location.hash==='#ergebnis'&&round&&round.index>=round.items.length)result();else{round=null;renderHome();}}
+document.addEventListener('click',e=>{const b=e.target.closest('button');if(!b||b.disabled)return;if(b.dataset.mode){mode=b.dataset.mode;renderHome();app.querySelector(`[data-mode="${mode}"]`)?.focus({preventScroll:true});return;}if(b.dataset.section){section=b.dataset.section;renderHome();app.querySelector(`[data-section="${section}"]`)?.focus({preventScroll:true});return;}if(b.dataset.length){length=b.dataset.length==='all'?'all':Number(b.dataset.length);renderHome();app.querySelector(`[data-length="${length}"]`)?.focus({preventScroll:true});return;}if(b.hasAttribute('data-answer'))return answer(Number(b.dataset.answer));if(b.hasAttribute('data-self'))return selfAnswer(b.dataset.self==='true');switch(b.dataset.action){case'home':home();window.scrollTo({top:0,behavior:'instant'});break;case'start':start();window.scrollTo({top:0,behavior:'instant'});break;case'review':start(difficult(),true);window.scrollTo({top:0,behavior:'instant'});break;case'reveal':reveal();break;case'next':next();break;case'retry':{const missed=[...round.missed];start(missed,true);window.scrollTo({top:0,behavior:'instant'});break;}case'again':start();window.scrollTo({top:0,behavior:'instant'});break;case'reset':if(confirm('Möchtest du deinen gesamten Lernstand auf diesem Gerät löschen?')){records={};save();renderHome();}break;}});
+app.addEventListener('input',e=>{if(e.target.id!=='search')return;const q=e.target.value.trim().toLocaleLowerCase('de');document.getElementById('word-list').innerHTML=listWords(WORDS.filter(w=>(w.en+' '+w.de).toLocaleLowerCase('de').includes(q)));});
+window.addEventListener('hashchange',render);
+window.addEventListener('keydown',e=>{if(!round||location.hash!=='#spielen'||e.ctrlKey||e.metaKey||e.altKey||['INPUT','TEXTAREA','SELECT','BUTTON'].includes(document.activeElement?.tagName))return;if(round.mode==='quiz'&&!round.locked&&/^[1-4]$/.test(e.key)){e.preventDefault();answer(Number(e.key)-1);}});
+render();
+</script>
+</body>
+</html>
